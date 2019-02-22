@@ -1,0 +1,14 @@
+= form_for (@phrase) do |f|
+  h1
+    | Create Phrase
+  .form-group
+    = f.label :phrase
+    = f.text_field :phrase, :class => 'form-control'
+  .form-group
+    = f.label :translation
+    = f.text_field :translation, :class => 'form-control'
+  .form-group
+    = f.label :category, 'Category:'
+    = f.select :category, Phrase::CATEGORIES, {}, { :class => 'form-control' }
+  .actions
+    = f.submit 'Submit', :class => 'btn btn-primary'

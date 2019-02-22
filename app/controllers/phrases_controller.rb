@@ -1,0 +1,80 @@
+class PhrasesController < ApplicationController
+  before_action :set_phrase!, only: [:edit, :update, :destroy, :show]
+  before_action :check_user!, only: [:edit, :update, :destroy]
+  before_action :check_user_before_example_deletion!, only: [:delete_example]
+
+  def index
+    @phrases = Phrase.includes(:user).paginate(:page => params[:page], :per_page => 10)
+  end
+
+  def new
+    @phrase = Phrase.new()
+    @phrase.example.build(:user_id => current_user.id)
+  end
+
+  def show
+    @examples = @phrase.example.includes(:user).paginate(:page => params[:page], :per_page => 10)
+    @example = @phrase.example.build(:user_id => current_user.id)
+  end
+
+  def edit
+
+  end
+
+  def update
+    if @phrase.update_attributes(phrase_params)
+      flash[:notice] = 'Phrase has been updated!'
+      redirect_to user_path(@phrase.user)
+    else
+      flash[:danger] = @phrase.errors.full_messages.to_sentence
+      render :edit
+    end
+  end
+
+  def destroy
+    @phrase.destroy
+    flash[:notice] = 'Phrase has been deleted!'
+    redirect_to user_path(@phrase.user)
+  end
+
+  def create_example
+    @example = @phrase.examples.new(example_params)
+    if @example.save
+      flash[:notice] = 'Example has been created!'
+    else
+      flash[:danger] = @example.errors.full_messages.to_sentence
+    end
+    redirect_to phrase_path
+  end
+
+  def create
+    @phrase = current_user.phrases.new(phrase_params)
+    if @phrase.save
+      flash[:notice] = 'Phrase has been created'
+      redirect_to phrases_path
+    else
+      flash[:danger] = @phrase.errors.full_messages.to_sentence
+      render :new
+    end
+  end
+
+  private
+
+  def phrase_params
+    phrase = params.require(:phrase).permit(:phrase, :translation, :category, examples_attributes: [ :example, :user_id, :_destroy ])
+    phrase[:category] = phrase[:category].to_i
+    phrase
+  end
+
+  def set_phrase!
+    @phrase = Phrase.friendly.find_by(phrase: params[:id])
+  end
+
+  def check_user!
+    unless @phrase.is_author? current_user
+      flash[:danger] = 'You don\'t author of phrase, go away!'
+      redirect_to(:back)
+    end
+  end
+
+end

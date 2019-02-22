@@ -1,0 +1,32 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+.alert{
+  color: black;
+  border: 1px solid lightgrey;
+  background-color: #f0f0f0;
+  text-align: center;
+  opacity: 1;
+  animation: fadeIn 1s;
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
+}
+
+.alert-notice {
+  background-color: green;
+  color: white
+}
+
+.alert-danger {
+  background-color: red;
+  color: white
+}
+
+@keyframes fadeIn {
+  from { opacity: 1; }
+  to {
+    opacity: 0;
+    height: 0px;
+    padding: 0px;
+  }
+}
