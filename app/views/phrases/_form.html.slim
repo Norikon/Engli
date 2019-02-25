@@ -14,7 +14,7 @@
     br
     = f.select :category, Phrase::CATEGORIES, {}, { :class => 'form-control' }
 
-  - if @phrase.id?
+  - if @phrase.id.nil?
     = f.fields_for :examples do |example|
       .form-group
         = example.label :example

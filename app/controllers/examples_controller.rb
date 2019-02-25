@@ -1,9 +1,9 @@
 class ExamplesController < ApplicationController
-  before_action :set_phrase!, only: [:create, :destroy]
-  before_action :set_example!, only: [:destroy]
+  before_action :set_phrase!, only: [:create, :destroy, :vote]
+  before_action :set_example!, only: [:destroy, :vote]
 
   def create
-    @example = @phrase.example.new(example_params)
+    @example = @phrase.examples.new(example_params)
     if @example.save
       flash[:notice] = 'Example has been created!'
     else
@@ -20,7 +20,7 @@ class ExamplesController < ApplicationController
 
   def vote
     shared_vote(@example)
-    redirect_to(:back)
+      redirect_to phrase_path(@phrase)
   end
 
   private
@@ -34,7 +34,12 @@ class ExamplesController < ApplicationController
   end
 
   def set_example!
-    @example = @phrase.example.find_by(id: params[:id])
+    if params[:example_id]
+      param = params[:example_id]
+    else
+      param = params[:id]
+    end
+    @example = @phrase.examples.find_by(id: param)
   end
 
 end

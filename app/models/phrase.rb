@@ -3,9 +3,11 @@ class Phrase < ActiveRecord::Base
   extend FriendlyId
 
   belongs_to :user
-  has_many :example
+  has_many :examples, dependent: :destroy
+  accepts_nested_attributes_for :examples, allow_destroy: true
 
   friendly_id :phrase, use: :slugged
+  acts_as_votable
 
   CATEGORIES = [['Actions', 0], ['Time', 1], ['Productivity', 2], ['Apologies', 3], ['Common', 4]]
   validates :translation, :phrase, presence: true

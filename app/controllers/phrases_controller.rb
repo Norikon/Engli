@@ -1,5 +1,5 @@
 class PhrasesController < ApplicationController
-  before_action :set_phrase!, only: [:edit, :update, :destroy, :show]
+  before_action :set_phrase!, only: [:edit, :update, :destroy, :show, :vote]
   before_action :check_user!, only: [:edit, :update, :destroy]
   before_action :check_user_before_example_deletion!, only: [:delete_example]
 
@@ -9,12 +9,12 @@ class PhrasesController < ApplicationController
 
   def new
     @phrase = Phrase.new()
-    @phrase.example.build(:user_id => current_user.id)
+    @phrase.examples.build(:user_id => current_user.id)
   end
 
   def show
-    @examples = @phrase.example.includes(:user).paginate(:page => params[:page], :per_page => 10)
-    @example = @phrase.example.build(:user_id => current_user.id)
+    @examples = @phrase.examples.includes(:user).paginate(:page => params[:page], :per_page => 10)
+    @example = @phrase.examples.build(:user_id => current_user.id)
   end
 
   def edit
@@ -58,6 +58,11 @@ class PhrasesController < ApplicationController
     end
   end
 
+  def vote
+    shared_vote(@phrase)
+    redirect_back fallback_location: {action: "show"}
+  end
+
   private
 
   def phrase_params
@@ -73,7 +78,7 @@ class PhrasesController < ApplicationController
   def check_user!
     unless @phrase.is_author? current_user
       flash[:danger] = 'You don\'t author of phrase, go away!'
-      redirect_to(:back)
+      redirect_back fallback_location: phrase
     end
   end
 
