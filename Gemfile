@@ -30,9 +30,16 @@ gem 'acts_as_votable'
 #Git
 gem 'git'
 
+# Notification
+gem 'public_activity', '~> 1.5.0'
+
 # Paginate
 gem 'will_paginate'
 gem 'will_paginate-bootstrap'
+
+# Coffee
+gem 'coffee-rails'
+gem 'coffee-script'
 
 # Devise
 gem 'devise'

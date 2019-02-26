@@ -1,7 +1,9 @@
 class Phrase < ActiveRecord::Base
+  include PublicActivity::Common
   include SharedMethods
   extend FriendlyId
 
+  has_many :activities, as: :trackable, class_name: 'PublicActivity::Activity', dependent: :destroy
   belongs_to :user
   has_many :examples, dependent: :destroy
   accepts_nested_attributes_for :examples, allow_destroy: true
