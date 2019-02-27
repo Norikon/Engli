@@ -1,5 +1,5 @@
 class Example < ApplicationRecord
-  include PublicActivity::Model
+  include PublicActivity::Common
   include SharedMethods
 
   belongs_to :phrase
