@@ -11,6 +11,21 @@
           = f.text_field :username, autofocus: true, :class => 'form-control'
 
         .form-group
+          = f.label :age
+          br
+          = f.text_field :age, autofocus: true, :class => 'form-control'
+
+        .form-group
+          = f.label :city
+          br
+          = f.text_field :city, autofocus: true, :class => 'form-control'
+
+        .form-group
+          = f.label :identity
+          br
+          = f.select :identity, [[:male, false], [:female, true]]
+
+        .form-group
           = f.label :email
           br
           = f.email_field :email, autofocus: true, :class => 'form-control'

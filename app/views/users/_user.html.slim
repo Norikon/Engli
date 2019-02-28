@@ -4,4 +4,11 @@ tr
   td = user.email
   td = date_formatter user.created_at
   td = date_formatter user.updated_at
+  td = user.city
+  td = user.age
+  td
+    - if user.identity
+      |female
+    - else
+      |male
   td = user.carma

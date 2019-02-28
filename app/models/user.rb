@@ -7,7 +7,11 @@ class User < ApplicationRecord
   has_many :examples
 
   validates :username, presence: true
+  validates :age, presence: true
+  validates :city, presence: true
+  validates :identity, presence: true
   validates :username, uniqueness: true
+
 
   def has_new_notifications?
     PublicActivity::Activity.where(recipient_id: self.id, readed: false).any?
