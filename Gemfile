@@ -20,6 +20,7 @@ gem 'jquery-rails', '~> 4.3.1'
 gem 'rails_layout'
 gem 'coffee-rails'
 gem 'coffee-script'
+gem 'uglifier'
 
 # Another
 gem 'acts_as_votable'
