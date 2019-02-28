@@ -1,19 +1,23 @@
-h1
-  | Listing phrases
+h1 Listing phrases
 table.table.table-striped
-  thead.thead-light
-    th scope="col" Id
-    th scope="col" Phrase
-    th scope="col" Translation
-    th scope="col" Category
-    th scope="col" Author
-    th scope="col" Actions
-    th scope="col" Votes
+  - if @phrases.all.empty?
+    tr
+      td No phrases exist. You can add one right now
+  - else
+    thead.thead-light
+      tr
+        th scope="col" Id
+        th scope="col" Phrase
+        th scope="col" Translation
+        th scope="col" Category
+        th scope="col" Author
+        th scope="col" Actions
+        th scope="col" Votes
 
-  - @phrases.each do |phrase|
-    = render phrase, author: true
+        - @phrases.each do |phrase|
+          = render phrase, author: true
 
-  .text-center
-    = will_paginate @phrases, renderer: BootstrapPagination::Rails
+        .text-center
+          = will_paginate @phrases, renderer: BootstrapPagination::Rails
 
 = link_to 'Add new phrase', new_phrase_path

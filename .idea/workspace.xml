@@ -3,16 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="2d4bf65d-fefd-4f40-87db-eab63534ead5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/user/registrations_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/user/registrations_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/helpers/application_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/application_helper.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/devise/registrations/edit.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/devise/registrations/edit.html.slim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/examples/_example.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/examples/_example.html.slim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/phrases/_phrase.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/phrases/_phrase.html.slim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/phrases/index.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/phrases/index.html.slim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/phrases/show.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/phrases/show.html.slim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/users/index.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/index.html.slim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/users/show.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/show.html.slim" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
@@ -50,10 +42,10 @@
           <entry key="js" value="6" />
           <entry key="lock" value="6" />
           <entry key="pid" value="5" />
-          <entry key="rb" value="150" />
+          <entry key="rb" value="152" />
           <entry key="rnc" value="1" />
           <entry key="scss" value="13" />
-          <entry key="slim" value="102" />
+          <entry key="slim" value="109" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -63,9 +55,9 @@
           <entry key="JavaScript" value="6" />
           <entry key="PLAIN_TEXT" value="11" />
           <entry key="RNG Compact" value="1" />
-          <entry key="Ruby" value="164" />
+          <entry key="Ruby" value="166" />
           <entry key="SCSS" value="13" />
-          <entry key="Slim" value="102" />
+          <entry key="Slim" value="109" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -76,7 +68,7 @@
           <entry key="lock" value="9" />
           <entry key="rb" value="3241" />
           <entry key="scss" value="600" />
-          <entry key="slim" value="3112" />
+          <entry key="slim" value="3466" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -86,18 +78,36 @@
           <entry key="PLAIN_TEXT" value="9" />
           <entry key="Ruby" value="3722" />
           <entry key="SCSS" value="600" />
-          <entry key="Slim" value="3112" />
+          <entry key="Slim" value="3466" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/devise/registrations/edit.html.slim">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/users/show.html.slim">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="28" column="65" selection-start-line="28" selection-start-column="65" selection-end-line="28" selection-end-column="65" />
+            <state relative-caret-position="197">
+              <caret line="16" column="6" lean-forward="true" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/phrases/show.html.slim">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="122">
+              <caret line="22" column="3" lean-forward="true" selection-start-line="22" selection-start-column="3" selection-end-line="23" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/phrases/index.html.slim">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="52" lean-forward="true" selection-start-line="2" selection-start-column="2" selection-end-line="4" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -120,6 +130,7 @@
       <find>show</find>
       <find>chevron-down</find>
       <find>update</find>
+      <find>@phrase</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -159,16 +170,16 @@
         <option value="$PROJECT_DIR$/app/views/layouts/_navigation.html.slim" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.scss" />
         <option value="$PROJECT_DIR$/app/views/examples/_example.html.slim" />
-        <option value="$PROJECT_DIR$/app/views/phrases/_phrase.html.slim" />
         <option value="$PROJECT_DIR$/app/helpers/application_helper.rb" />
-        <option value="$PROJECT_DIR$/app/views/phrases/show.html.slim" />
-        <option value="$PROJECT_DIR$/app/views/phrases/index.html.slim" />
         <option value="$PROJECT_DIR$/app/views/users/index.html.slim" />
-        <option value="$PROJECT_DIR$/app/views/users/show.html.slim" />
         <option value="$PROJECT_DIR$/app/views/devise/registrations/new.html.slim" />
         <option value="$PROJECT_DIR$/app/controllers/user/registrations_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
         <option value="$PROJECT_DIR$/app/views/devise/registrations/edit.html.slim" />
+        <option value="$PROJECT_DIR$/app/views/phrases/_phrase.html.slim" />
+        <option value="$PROJECT_DIR$/app/views/users/show.html.slim" />
+        <option value="$PROJECT_DIR$/app/views/phrases/index.html.slim" />
+        <option value="$PROJECT_DIR$/app/views/phrases/show.html.slim" />
       </list>
     </option>
   </component>
@@ -255,15 +266,7 @@
               <item name="Engli" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="devise" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Engli" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Engli" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="devise" type="462c0819:PsiDirectoryNode" />
-              <item name="registrations" type="462c0819:PsiDirectoryNode" />
+              <item name="phrases" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -420,7 +423,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74036000" />
+    <option name="totallyTimeSpent" value="76308000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -635,13 +638,6 @@
     <entry file="file://$PROJECT_DIR$/app/helpers/static_page_helper.rb">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/examples/_example.html.slim">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="51" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -656,13 +652,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/phrases/_phrase.html.slim">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/concerns/shared_methods.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -674,27 +663,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="406">
           <caret line="87" column="19" lean-forward="true" selection-start-line="87" selection-start-column="19" selection-end-line="87" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/phrases/show.html.slim">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-81">
-          <caret line="2" selection-start-line="2" selection-end-line="11" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/phrases/index.html.slim">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/phrases_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="5" lean-forward="true" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -715,13 +683,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/phrase.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="3" lean-forward="true" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/helpers/users_helper.rb">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -736,20 +697,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="20" column="7" lean-forward="true" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/index.html.slim">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/show.html.slim">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
@@ -778,6 +725,58 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
           <caret line="28" column="65" selection-start-line="28" selection-start-column="65" selection-end-line="28" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/phrases_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-580">
+          <caret line="7" column="5" lean-forward="true" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/phrase.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="3" lean-forward="true" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/users/index.html.slim">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/phrases/_phrase.html.slim">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/examples/_example.html.slim">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="51" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/users/show.html.slim">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="16" column="6" lean-forward="true" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/phrases/index.html.slim">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="52" lean-forward="true" selection-start-line="2" selection-start-column="2" selection-end-line="4" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/phrases/show.html.slim">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="22" column="3" lean-forward="true" selection-start-line="22" selection-start-column="3" selection-end-line="23" selection-end-column="20" />
         </state>
       </provider>
     </entry>
