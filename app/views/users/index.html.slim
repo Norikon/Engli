@@ -1,16 +1,17 @@
 h1 Listing users
 
-table.table
-  tr
-    th Id
-    th Username
-    th Email
-    th Created At
-    th Updated At
-    th City
-    th Age
-    th Identity
-    th Carma
+table.table.table-striped
+  thead.thead-light
+    tr
+      th Id
+      th Username
+      th Email
+      th Created At
+      th Updated At
+      th City
+      th Age
+      th Identity
+      th Carma
 
   - @users.each do |user|
     = render user

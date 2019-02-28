@@ -9,7 +9,7 @@ class User < ApplicationRecord
   validates :username, presence: true
   validates :age, presence: true
   validates :city, presence: true
-  validates :identity, presence: true
+  validates :identity, inclusion: { in: [ true, false ] }
   validates :username, uniqueness: true
 
 

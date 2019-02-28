@@ -19,23 +19,22 @@ h1 Phrase #{@phrase.phrase}
           br
           = f.text_field :example, :class => 'form-control'
           = f.hidden_field :user_id, :class => 'form-control'
-
         = f.submit 'Create new Example', :class => 'btn btn-primary'
   .row
     .col_md_12.m-t-l
       h2 Examples:
 
       table.table.table-striped
-        tr
-          th Example
-          th Author
-          th Created At
-          th Votes
-          th Actions
+        thead.thead-light
+          tr
+            th scope="col" Example
+            th scope="col" Author
+            th scope="col" Created At
+            th scope="col" Votes
+            th scope="col" Actions
 
         - @examples.each do |example|
           = render example
-
 
       .text-center
         = will_paginate @examples, renderer: BootstrapPagination::Rails

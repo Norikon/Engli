@@ -12,19 +12,8 @@ tr
   - else
     td -
   td
-    = link_to vote_phrase_path(phrase, vote: 'up'), method: :post do
-      div
-        span.glyphicon.glyphicon-chevron-up.upvote
-    | #{ phrase.get_likes.size - phrase.get_dislikes.size }
     = link_to vote_phrase_path(phrase, vote: 'down'), method: :post do
-      div
-        span.glyphicon.glyphicon-chevron-down.downvote
-
-= puts '@@@@@@@@@@@@@'
-= puts '@@@@@@@@@@@@@'
-= puts '@@@@@@@@@@@@@'
-= puts phrase.user.username
-= puts current_user.username
-= puts '@@@@@@@@@@@@@'
-= puts '@@@@@@@@@@@@@'
-= puts '@@@@@@@@@@@@@'
+      span.glyphicon.glyphicon-chevron-left.downvote
+      | #{ phrase.get_likes.size - phrase.get_dislikes.size }
+    = link_to vote_phrase_path(phrase, vote: 'up'), method: :post do
+      span.glyphicon.glyphicon-chevron-right.upvote

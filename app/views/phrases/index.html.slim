@@ -1,14 +1,14 @@
 h1
   | Listing phrases
-table.table
-  tr
-    th Id
-    th.col-sm-5 Phrase
-    th.col-sm-3 Translation
-    th.col-sm-1 Category
-    th.col-sm-1 Author
-    th.col-sm-2 Actions
-    th Votes
+table.table.table-striped
+  thead.thead-light
+    th scope="col" Id
+    th scope="col" Phrase
+    th scope="col" Translation
+    th scope="col" Category
+    th scope="col" Author
+    th scope="col" Actions
+    th scope="col" Votes
 
   - @phrases.each do |phrase|
     = render phrase, author: true

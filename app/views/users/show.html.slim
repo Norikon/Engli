@@ -1,17 +1,26 @@
 .container-fluid
   .row
     .col-md-12
+
       h1 Username: #{@user.username}
+      h4 Age: #{@user.age}
+      - if @user.identity
+        h4 Identity: Female
+      - else
+        h4 Identity: Male
+      h4 City: #{@user.city}
 
       h3 User Phrases
-      table.table
-        tr
-          th Id
-          th Phrase
-          th Translation
-          th Category
-          th Actions
-          th Votes
+      table.table.table-striped
+        thead.thead-light
+          tr
+            th scope="col" Id
+            th.col-sm-4 scope="col" Phrase
+            th.col-sm-3 scope="col" Translation
+            th.col-sm-1 scope="col" Category
+            th.col-sm-1 scope="col" Author
+            th.col-sm-2 scope="col" Actions
+            th.col-sm-1 scope="col" Votes
 
 
         - @phrases.each do |phrase|

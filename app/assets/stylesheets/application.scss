@@ -5,6 +5,18 @@
 @import "examples";
 @import "users";
 
+td {
+  font-size: 1.3rem;
+}
+
+.upvote {
+  color: lightgreen;
+}
+
+.downvote {
+  color: red;
+}
+
 .alert{
   color: black;
   border: 1px solid lightgrey;
