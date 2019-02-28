@@ -13,9 +13,8 @@ table.table.table-striped
       th Identity
       th Carma
 
-  - @users.each do |user|
-    = render user
-
+    - @users.each do |user|
+      = render user
 
 .text-center
   = will_paginate @users, renderer: BootstrapPagination::Rails

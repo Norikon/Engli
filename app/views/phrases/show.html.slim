@@ -24,20 +24,20 @@ h1 Phrase #{@phrase.phrase}
     .col_md_12.m-t-l
       h2 Examples:
       table.table.table-striped
-      - if @examples.all.empty?
-        tr
-          td No examples exist. You can add one right now
-      - else
         thead.thead-light
-          tr
-            th scope="col" Example
-            th scope="col" Author
-            th scope="col" Created At
-            th scope="col" Votes
-            th scope="col" Actions
+          - if @examples.all.empty?
+            tr
+              th No examples exist. You can add one right now
+          - else
+            tr
+              th scope="col" Example
+              th scope="col" Author
+              th scope="col" Created At
+              th scope="col" Votes
+              th scope="col" Actions
 
-        - @examples.each do |example|
-          = render example
+          - @examples.each do |example|
+            = render example
 
-      .text-center
-        = will_paginate @examples, renderer: BootstrapPagination::Rails
+.text-center
+  = will_paginate @examples, renderer: BootstrapPagination::Rails

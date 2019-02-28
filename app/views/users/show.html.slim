@@ -1,32 +1,30 @@
-
 h1 Username: #{@user.username}
 h4 Age: #{@user.age}
+
 - if @user.identity
   h4 Identity: Female
 - else
   h4 Identity: Male
+
 h4 City: #{@user.city}
 
 h3 User Phrases
 table.table.table-striped
   thead.thead-light
-  - if @phrases.all.empty?
-    tr
-      td No phrases exist. You can add one right now
-  - else
-    tr
-      th scope="col" Id
-      th.col-sm-4 scope="col" Phrase
-      th.col-sm-3 scope="col" Translation
-      th.col-sm-1 scope="col" Category
-      th.col-sm-1 scope="col" Author
-      th.col-sm-2 scope="col" Actions
-      th.col-sm-1 scope="col" Votes
+    - if @phrases.all.empty?
+      tr
+        th No phrases exist. You can add one right now
+    - else
+      tr
+        th scope="col" Id
+        th.col-sm-4 scope="col" Phrase
+        th.col-sm-3 scope="col" Translation
+        th.col-sm-1 scope="col" Category
+        th.col-sm-1 scope="col" Author
+        th.col-sm-2 scope="col" Actions
+        th.col-sm-1 scope="col" Votes
 
-      - @phrases.each do |phrase|
-        = render phrase, author: false
-
-      .text-center
-        = will_paginate @phrases, renderer: BootstrapPagination::Rails
+    - @phrases.each do |phrase|
+      = render phrase, author: false
 
 = link_to 'Add new phrase', new_phrase_path

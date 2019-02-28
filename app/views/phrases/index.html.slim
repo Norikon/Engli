@@ -1,10 +1,10 @@
 h1 Listing phrases
 table.table.table-striped
-  - if @phrases.all.empty?
-    tr
-      td No phrases exist. You can add one right now
-  - else
-    thead.thead-light
+  thead.thead-light
+    - if @phrases.all.empty?
+      tr
+        th No phrases exist. You can add one right now
+    - else
       tr
         th scope="col" Id
         th scope="col" Phrase
@@ -14,10 +14,10 @@ table.table.table-striped
         th scope="col" Actions
         th scope="col" Votes
 
-        - @phrases.each do |phrase|
-          = render phrase, author: true
+    - @phrases.each do |phrase|
+      = render phrase, author: true
 
-        .text-center
-          = will_paginate @phrases, renderer: BootstrapPagination::Rails
+.text-center
+  = will_paginate @phrases, renderer: BootstrapPagination::Rails
 
 = link_to 'Add new phrase', new_phrase_path
