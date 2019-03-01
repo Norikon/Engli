@@ -23,7 +23,7 @@ class PhrasesController < ApplicationController
 
   def update
     if @phrase.update_attributes(phrase_params)
-      flash[:notice] = 'Phrase has been updated!'
+      flash[:success] = 'Phrase has been updated!'
       redirect_to user_path(@phrase.user)
     else
       flash[:danger] = @phrase.errors.full_messages.to_sentence
@@ -33,7 +33,7 @@ class PhrasesController < ApplicationController
 
   def destroy
     @phrase.destroy
-    flash[:notice] = 'Phrase has been deleted!'
+    flash[:success] = 'Phrase has been deleted!'
     redirect_to user_path(@phrase.user)
   end
 

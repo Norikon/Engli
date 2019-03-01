@@ -23,26 +23,30 @@ td {
   background-color: #f0f0f0;
   text-align: center;
   opacity: 1;
-  animation: fadeIn 1s;
+  animation: fadeIn 2s;
   animation-delay: 5s;
   animation-fill-mode: forwards;
 }
 
+.alert-success {
+  background-color: #d9f4de;
+  color: black
+}
+
 .alert-notice {
-  background-color: green;
-  color: white
+  background-color: #d9f4de;
+  color: black
 }
 
 .alert-danger {
-  background-color: red;
-  color: white
+  background-color: #f9c5c5;
+  color: black
 }
 
 @keyframes fadeIn {
   from { opacity: 1; }
   to {
     opacity: 0;
-    height: 0px;
     padding: 0px;
   }
 }

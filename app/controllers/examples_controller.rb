@@ -5,7 +5,7 @@ class ExamplesController < ApplicationController
   def create
     @example = @phrase.examples.new(example_params)
     if @example.save
-      flash[:notice] = 'Example has been created!'
+      flash[:success] = 'Example has been created!'
     else
       flash[:danger] = @example.errors.full_messages.to_sentence
     end
@@ -14,7 +14,7 @@ class ExamplesController < ApplicationController
 
   def destroy
     @example.destroy
-    flash[:notice] = 'Example has been deleted!'
+    flash[:success] = 'Example has been deleted!'
     redirect_to phrase_path(@phrase)
   end
 
