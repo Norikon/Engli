@@ -23,8 +23,8 @@ h1 Phrase #{@phrase.phrase}
   .row
     .col_md_12.m-t-l
       h2 Examples:
-      table.table.table-striped
-        thead.thead-light
+      table.table
+        thead
           - if @examples.all.empty?
             tr
               th No examples exist. You can add one right now

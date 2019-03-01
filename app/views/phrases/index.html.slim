@@ -1,5 +1,5 @@
 h1 Listing phrases
-table.table.table-striped
+table.table
   thead.thead-light
     - if @phrases.all.empty?
       tr
@@ -20,4 +20,5 @@ table.table.table-striped
 .text-center
   = will_paginate @phrases, renderer: BootstrapPagination::Rails
 
-= link_to 'Add new phrase', new_phrase_path
+div.btn.btn-primary type="button"
+  = link_to 'Add new phrase', new_phrase_path
