@@ -40,7 +40,7 @@ class PhrasesController < ApplicationController
   def create_example
     @example = @phrase.examples.new(example_params)
     if @example.save
-      flash[:notice] = 'Example has been created!'
+      flash[:success] = 'Example has been created!'
     else
       flash[:danger] = @example.errors.full_messages.to_sentence
     end
@@ -50,7 +50,7 @@ class PhrasesController < ApplicationController
   def create
     @phrase = current_user.phrases.new(phrase_params)
     if @phrase.save
-      flash[:notice] = 'Phrase has been created'
+      flash[:success] = 'Phrase has been created'
       redirect_to phrases_path
     else
       flash[:danger] = @phrase.errors.full_messages.to_sentence

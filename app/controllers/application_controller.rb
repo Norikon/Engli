@@ -7,6 +7,10 @@ class ApplicationController < ActionController::Base
   def shared_vote(instance)
     if params[:vote] == 'up'
       instance.liked_by current_user
+      values_difference = instance.get_likes.size - instance.get_dislikes.size
+      if values_difference % 5 == 0
+        UserMailer.five_like(instance.user).deliver
+      end
     else
       instance.downvote_from current_user
     end
@@ -15,7 +19,7 @@ class ApplicationController < ActionController::Base
       instance.set_carma(params[:vote], current_user)
       message = params[:vote] == 'up' ? 'Liked your' : 'Disliked your'
       instance.create_activity key: message, owner: current_user, recipient: instance.user
-      flash[:notice] = 'Thanks for your vote!'
+      flash[:success] = 'Thanks for your vote!'
     else
       flash[:danger] = 'You\'ve already voted that post!'
     end

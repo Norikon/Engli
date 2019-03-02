@@ -20,7 +20,7 @@ class ExamplesController < ApplicationController
 
   def vote
     shared_vote(@example)
-      redirect_to phrase_path(@phrase)
+    redirect_to phrase_path(@phrase)
   end
 
   private

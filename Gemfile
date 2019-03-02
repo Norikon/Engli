@@ -22,6 +22,9 @@ gem 'coffee-rails'
 gem 'coffee-script'
 gem 'uglifier'
 
+# Mailer
+gem 'figaro'
+
 # Another
 gem 'acts_as_votable'
 gem 'git'
