@@ -18,13 +18,12 @@ class PhrasesController < ApplicationController
   end
 
   def edit
-
   end
 
   def update
     if @phrase.update_attributes(phrase_params)
       flash[:success] = 'Phrase has been updated!'
-      redirect_to user_path(@phrase.user)
+      redirect_to phrases_path
     else
       flash[:danger] = @phrase.errors.full_messages.to_sentence
       render :edit
@@ -78,7 +77,7 @@ class PhrasesController < ApplicationController
   def check_user!
     unless @phrase.is_author? current_user
       flash[:danger] = 'You don\'t author of phrase, go away!'
-      redirect_back fallback_location: phrase
+      redirect_back fallback_location: phrase_path
     end
   end
 

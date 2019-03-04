@@ -24,7 +24,7 @@ td {
 .alert{
   color: black;
   border: 1px solid lightgrey;
-  background-color: #f0f0f0;
+  background-color: #f9c5c5;
   text-align: center;
   opacity: 1;
   animation: fadeIn 2s;
@@ -39,11 +39,6 @@ td {
 
 .alert-notice {
   background-color: #d9f4de;
-  color: black
-}
-
-.alert-danger {
-  background-color: #f9c5c5;
   color: black
 }
 

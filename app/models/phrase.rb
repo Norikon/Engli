@@ -21,5 +21,8 @@ class Phrase < ActiveRecord::Base
             }
   enum category: {'Actions': 0, 'Time': 1, 'Productivity': 2, 'Apologies': 3, 'Common': 4}
 
+  def should_generate_new_friendly_id?
+    slug.blank? || phrase_changed?
+  end
 
 end

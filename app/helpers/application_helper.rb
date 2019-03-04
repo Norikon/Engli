@@ -1,6 +1,6 @@
 module ApplicationHelper
   def date_formatter(date)
-    date.strftime("%a %H %b %Y")
+    date.strftime("%a %d %b %Y")
   end
 
   def flash_class(level)
