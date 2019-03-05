@@ -8,10 +8,10 @@ class User < ApplicationRecord
   has_many :examples
 
   validates :username, presence: true
+  validates :username, uniqueness: true
   validates :age, presence: true
   validates :city, presence: true
   validates :identity, inclusion: { in: [ true, false ] }
-  validates :username, uniqueness: true
 
 
   def has_new_notifications?
