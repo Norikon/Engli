@@ -93,10 +93,4 @@ RSpec.configure do |config|
   # as the one that triggered the failure.
   Kernel.srand config.seed
 =end
-  require "capybara/rspec"
-  # spec/spec_helper.rb
-  require 'simplecov'
-  require 'simplecov-console'
-  SimpleCov.formatter = SimpleCov::Formatter::Console
-  SimpleCov.start
 end
