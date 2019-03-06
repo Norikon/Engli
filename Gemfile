@@ -47,7 +47,6 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'rspec-rails'
   gem 'factory_bot_rails'
-  gem 'factory_bot'
 end
 
 group :development do
@@ -70,6 +69,7 @@ group :test do
   gem 'launchy'
   gem 'simplecov', :require => false
   gem 'simplecov-console'
+  gem 'database_cleaner'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
