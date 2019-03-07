@@ -1,10 +1,10 @@
 require 'faker'
 
 FactoryBot.define do
-  factory :user do |f|
-    f.username { Faker::Name.first_name }
-    f.age { Faker::Number }
-    f.city { Faker::Address.city }
-    f.identity { Faker::Boolean }
+  factory :user do
+    email {Faker::Internet.email}
+  end
+  factory :confirmed_user, :parent => :user do
+    after(:create) { |user| user.confirm! }
   end
 end

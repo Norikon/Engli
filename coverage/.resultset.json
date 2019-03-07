@@ -28,6 +28,120 @@
         1,
         null
       ],
+      "/Users/leviossa/RubymineProjects/Engli/Engli/app/helpers/application_helper.rb": [
+        1,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        null,
+        null
+      ],
+      "/Users/leviossa/RubymineProjects/Engli/Engli/app/helpers/devise_helper.rb": [
+        1,
+        1,
+        0,
+        0,
+        null,
+        0,
+        null,
+        null
+      ],
+      "/Users/leviossa/RubymineProjects/Engli/Engli/app/helpers/examples_helper.rb": [
+        1,
+        1,
+        0,
+        null,
+        null
+      ],
+      "/Users/leviossa/RubymineProjects/Engli/Engli/app/helpers/notifications_helper.rb": [
+        1,
+        null,
+        1,
+        0,
+        0,
+        0,
+        null,
+        null,
+        null
+      ],
+      "/Users/leviossa/RubymineProjects/Engli/Engli/app/helpers/phrases_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/leviossa/RubymineProjects/Engli/Engli/app/helpers/static_page_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/leviossa/RubymineProjects/Engli/Engli/app/helpers/users_helper.rb": [
+        1,
+        null,
+        null
+      ],
+      "/Users/leviossa/RubymineProjects/Engli/Engli/app/controllers/users_controller.rb": [
+        1,
+        1,
+        0,
+        0,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/leviossa/RubymineProjects/Engli/Engli/app/controllers/application_controller.rb": [
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        null,
+        0,
+        null,
+        null,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        null,
+        null,
+        null,
+        1,
+        1,
+        0,
+        0,
+        0,
+        null,
+        0,
+        null,
+        null,
+        0,
+        0,
+        0,
+        null,
+        null,
+        null
+      ],
       "/Users/leviossa/RubymineProjects/Engli/Engli/app/channels/application_cable/channel.rb": [
         0,
         0,
@@ -35,50 +149,6 @@
         0
       ],
       "/Users/leviossa/RubymineProjects/Engli/Engli/app/channels/application_cable/connection.rb": [
-        0,
-        0,
-        0,
-        0
-      ],
-      "/Users/leviossa/RubymineProjects/Engli/Engli/app/controllers/application_controller.rb": [
-        0,
-        0,
-        0,
-        0,
-        null,
-        null,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        null,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        null,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        null,
-        0,
-        0,
         0,
         0,
         0,
@@ -419,76 +489,6 @@
         null,
         0
       ],
-      "/Users/leviossa/RubymineProjects/Engli/Engli/app/controllers/users_controller.rb": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        null,
-        0,
-        0,
-        0,
-        null,
-        0
-      ],
-      "/Users/leviossa/RubymineProjects/Engli/Engli/app/helpers/application_helper.rb": [
-        0,
-        0,
-        0,
-        0,
-        null,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "/Users/leviossa/RubymineProjects/Engli/Engli/app/helpers/devise_helper.rb": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "/Users/leviossa/RubymineProjects/Engli/Engli/app/helpers/examples_helper.rb": [
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "/Users/leviossa/RubymineProjects/Engli/Engli/app/helpers/notifications_helper.rb": [
-        0,
-        null,
-        0,
-        0,
-        0,
-        0,
-        0,
-        null,
-        0
-      ],
-      "/Users/leviossa/RubymineProjects/Engli/Engli/app/helpers/phrases_helper.rb": [
-        0,
-        0
-      ],
-      "/Users/leviossa/RubymineProjects/Engli/Engli/app/helpers/static_page_helper.rb": [
-        0,
-        0
-      ],
-      "/Users/leviossa/RubymineProjects/Engli/Engli/app/helpers/users_helper.rb": [
-        0,
-        null,
-        0
-      ],
       "/Users/leviossa/RubymineProjects/Engli/Engli/app/jobs/application_job.rb": [
         0,
         null,
@@ -591,6 +591,6 @@
         0
       ]
     },
-    "timestamp": 1551884381
+    "timestamp": 1551948994
   }
 }
